@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int n,s=0,r,h;
+    printf("enter n:");
+    scanf("%d",&n);
+    h=n;
+    while(n>0)
+    {
+        r=n%10;
+        s=s+r;
+        n=n/10;
+    }
+    if(h%s==0)
+    {
+        printf("HARSHAD NUMBER");
+    }
+    else
+    {
+        printf("NOT A HARSHAD NUMBER");
+    }
+    return 0;
+}
