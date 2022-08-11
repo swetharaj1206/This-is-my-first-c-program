@@ -1,0 +1,23 @@
+#include<stdio.h>
+{
+int main()
+    int n,s=0,p=1,res,r,t;
+    printf("enter n:");
+    scanf("%d",&n);
+    t=n;
+    while(n>0)
+        {
+        r=n%10;
+        p=p*r;
+        n=n/10;
+        }
+        while(t>0)
+        {
+    r=n%10;
+    s=s+r;
+    n=n/10;
+        }
+    res=p-s;
+    printf("%d",res);
+	return 0;
+}
